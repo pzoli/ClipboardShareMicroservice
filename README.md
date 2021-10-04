@@ -13,6 +13,7 @@ dotnet build
 cd bin\Debug\net5.0
 
 ClipboardShareMicroservice.exe --urls http://192.168.1.139:5000
+
 where you must change the IP address.
 
 ## Clipboard QRCodes
