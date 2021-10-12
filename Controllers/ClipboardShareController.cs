@@ -89,9 +89,10 @@ namespace ClipboardShareMicroservice.Controllers
 
         [HttpPost]
         [Route("jsonpost")]
-        public void DotnetPost([FromBody] ClipboardContent clipboardContent)
+        public string DotnetPost([FromBody] ClipboardContent clipboardContent)
         {
             Clipboard.SetText(clipboardContent.content);
+            return "ready";
         }
 
         [HttpPost]
